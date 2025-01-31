@@ -1,0 +1,234 @@
+.navbar {
+  display: flex;
+  gap: 10px;
+  background: #f8f8f8;
+  padding: 5px;
+  border-radius: 8px;
+  width: fit-content;
+}
+.navbar button {
+  border: none;
+  background: #ddd;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.navbar button:hover {
+  background: #ccc;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #ded5c0;
+    color: #333;
+  }
+  
+  h1, h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Magazine Container */
+  .magazine-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Content Grid */
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  /* Text Blocks */
+  .text-block {
+    grid-column: span 2; /* Spans two columns by default */
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .text-block.small {
+    grid-column: span 1; /* Smaller text for captions */
+    font-size: 0.9rem;
+  }
+  
+  /* Image Blocks */
+  .image-block {
+    grid-column: span 2; /* Full-size images span two columns */
+  }
+  
+  .image-block.small {
+    grid-column: span 1; /* Smaller images */
+  }
+  
+  .image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr; /* Stacks content for smaller screens */
+    }
+  
+    .text-block, .image-block {
+      grid-column: span 1; /* Make all blocks full-width on mobile */
+    }
+  }
+  @import url('https://fonts.googleapis.com/css?family=Cardo|Work+Sans&display=swap');
+
+  :root {
+    --white: #f1dee1;
+    --pink: rgb(189, 63, 128);
+    /* --coral: #FF7A63;
+    --jade: #275244; */
+    /* --black: #000;
+    --deepperiwinkle: #735DA5;
+    --softlilac: #D3C5E5; */
+  }
+  body {
+    background: var(--white);
+    margin: 0;
+    padding: 20px;
+    color: var(--pink);
+    font-size: 14px;
+    line-height: 1.25;
+  }
+  
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1em 3em;
+    margin: 20px;    
+  }
+  
+  /* TYPE */
+  .sans {
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  }
+  
+  .serif {
+    font-family: 'Cardo', Garamond, 'Times New Roman', serif;
+  }
+  
+  .centre {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 10em;
+    line-height: 90%;
+    margin: 40px 0;
+  }
+  
+  .summary {
+    font-size: 1.5em;
+    line-height: 1.35;
+  }
+  
+  .accent {
+    font-size: 2.5em;
+    line-height: 120%;
+    margin: 20px 0;
+  }
+  
+  .caps {
+    text-transform: uppercase;
+  }
+  
+  .justify {
+    text-align: justify;
+  }
+  
+  .fine-print {
+    font-size: 8px;
+  }
+  /*LINES*/
+  
+  .line-btm {
+    border-bottom: 1px solid var(--pink);
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .line-left {
+    border-left: 1px solid var(--pink);
+    padding: 0 10px;
+  }
+  
+  /* IMAGES */
+  .placeholder {
+    border: 1px solid var(--pink);
+    padding: 10px;
+    text-align: center;
+    min-height: 300px;
+  }
+
+  img.placeholder {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 8px; 
+    margin: 10px auto;
+    
+}
+
+  video.placeholder {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 8px; 
+  }
+  .placeholder img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* GRID */
+  .span-all {
+    grid-column: span 12;
+  }
+  
+  .span-third {
+    grid-column: span 4;
+  }
+  
+  .span-fourth {
+    grid-column: span 3;
+  }
+  
+  .span-half {
+    grid-column: span 6;
+  }
+  
+  .span-twothirds {
+    grid-column: span 8;
+  }
+  
+  .span-threefourths {
+    grid-column: span 9;
+  }  

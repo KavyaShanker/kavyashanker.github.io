@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="homepage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS '22</title>
+
+    <script>
+        function goToKav() {
+            console.log("Navigating to Kavya's page...");
+            window.location.href = 'kav.html';
+        }
+        function goToNish() {
+            window.location.href = 'nish.html';
+        }
+        function goToLav() {
+            window.location.href = 'lav.html';
+        }
+        function goToHeart() {
+            window.location.href = 'heart.html';
+        }
+        function goToHome() {
+            window.location.href = 'Homepage.html';
+        }
+    </script>
+
+
+
+
+</head>
+<body>
+    <main>
+        <div class="navbar" style="margin: 30px;">
+            <button onclick="goToHome()">Home</button>
+            <button onclick="goToKav()">K</button>
+            <button onclick="goToLav()">L</button>  
+            <button onclick="goToNish()">N</button>
+            <button onclick="goToHeart()">&#9829;</button>
+        </div>
+        <!-- <div class="header">
+        </div> -->
+        <h1 class="h1">Feeling 22!</h1>
+        <div class="container">
+            <!-- <div class="item" id="kav">
+                <img src="kav-images\IMG-20250126-WA0070.jpg" alt="Kavya">
+                <h2>Kavya</h2>
+                <p>With Love, from Kavya</p>
+            </div>     -->
+
+
+        </div>
+
+        <script src="items.js"></script>
+        <script src="app.js"></script>
+
+        <footer class="footer"> With &#9829, for J.</footer>
+
+    </main>
+
+
+</body>
+
+</html>

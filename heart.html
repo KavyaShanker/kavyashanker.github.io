@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Text around Image</title>
+    <link rel="stylesheet" href="styles_heart.css">
+
+    <script>
+        function goToKav() {
+            window.location.href = 'kav.html';
+        }
+
+        function goToNish() {
+            window.location.href = 'nish.html';
+        }
+ 
+        function goToLav() {
+            window.location.href = 'lav.html';
+        }
+
+        function goToHeart() {
+            window.location.href = 'heart.html';
+        }
+
+        function goToHome() {
+            console.log("Navigating to Homepage...");
+            window.location.href = 'Homepage.html';
+        }
+    </script>
+
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="goToHome()">Home</button>
+        <button onclick="goToKav()">K</button>
+        <button onclick="goToLav()">L</button>  
+        <button onclick="goToNish()">N</button>
+        <button onclick="goToHeart()">&#9829</button>
+    </div>
+
+    <div class="container">
+        <img src="soja.png" alt="Image" class="image">
+
+    </div>
+
+    <br><br>
+        <video style = "padding: 10px; width: 85%; border: 2px solid #51161f" controls autoplay loop muted>
+            <source src="whoasurprise.mp4" type="video/mp4">
+        </video>
+
+<br><br>
+        <footer> With &#9829, for J.</footer>
+</body>
+</html> 
